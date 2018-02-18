@@ -6,29 +6,32 @@ using System.Threading.Tasks;
 
 namespace @new
 {
-    class Program
+    class Tima
     {
-        struct Group 
-            {
-            public int kurs;
-            public string Name;
-            }
 
-        static void Main(string[] args)
+        public static int a = 0;
+        public Tima()
         {
-            Program p = new Program();
-            Group g = new Group();
-            List<Group> gr = new List<Group>();
-            string s = "tima";
-            try
-            {
-                int a = s;
-            }catch(Exception e)
-            {
-                Console.WriteLine("error " + e);
-            }
+            a++;
+        }
 
-            Console.Read();
+        static void grup()
+        {
+            Console.WriteLine("User:" + a);
+        }
+
+        class Program
+        {
+
+            static void Main(string[] args)
+            {
+                Tima t1 = new Tima();
+                Tima t2 = new Tima();
+                Tima t3 = new Tima();
+                Tima t4 = new Tima();
+                
+                Console.Read();
+            }
         }
     }
 }
